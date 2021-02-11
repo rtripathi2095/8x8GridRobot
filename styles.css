@@ -1,0 +1,42 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px;
+  grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px;
+  width: 50%;
+  margin: 0 auto;
+  height: 500px;
+}
+.grid-item {
+  border: 1px solid rgb(29, 28, 28);
+}
+.arrow {
+  border: solid black;
+  border-width: 0 1px 1px 0;
+  height: 10px;
+  width: 10px;
+  margin: 0;
+  position: relative;
+  z-index: inherit;
+  top: 40%;
+  left: 40%;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
